@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="His Image Apparel - Christian clothing to express your faith with style">
+    <title>His Image Apparel | Christian Clothing</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/jpg" href="images/BackGround.jpg">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 56px;
+            color: var(--dark-color);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin: 0;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            color: var(--dark-color);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--secondary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        /* Section Styling */
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+        
+        /* Product Cards */
+        .product-card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .product-title {
+            font-weight: 700;
+            margin: 1rem 0 0.5rem;
+        }
+        
+        .product-price {
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 8px 20px;
+            font-weight: 600;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+        
+        .testimonial cite {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: 600;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer p:first-child {
+            margin-bottom: 10px;
+        }
+        
+        /* Floating Cross */
+        .floating-cross {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .floating-cross:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .product-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html" aria-label="His Image Apparel">HIS IMAGE APPAREL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventory.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Wear His Image, Shine His Light!</h2>
+            <p class="hero-subtitle">Christian-inspired apparel to express your faith with style.</p>
+            <a href="inventory.html" class="btn btn-primary">Shop Now</a>
+        </div>
+  <style>
+    /* Custom Styles */
+    .hero-section {
+      background-color: var(--dark-color); /* Fallback if images don't load */
+    }
+    
+    .hero-overlay {
+      background: rgba(44, 62, 80, 0.4); /* Semi-transparent overlay matching your primary color */
+    }
+    
+    .carousel-item {
+      transition: transform 1.5s ease-in-out; /* Smoother transition */
+    }
+    
+    .object-fit-cover {
+      object-fit: cover;
+    }
+  </style>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <article class="product-card card h-100">
+                        <img src="Images/Praise The Lord Hoodie.jpg" alt="Praise The Lord Hoodie" 
+                             class="product-image card-img-top"
+                             loading="lazy">
+                        <div class="card-body">
+                            <h3 class="product-title card-title">"Praise The Lord" Hoodie</h3>
+                            <p class="product-price">BWP 550.00</p>
+                            <a href="inventory.html" class="btn btn-secondary">View Product</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <article class="product-card card h-100">
+                        <img src="Images/Call On Jesus.jpg" alt="Call On Jesus T-Shirt" 
+                             class="product-image card-img-top"
+                             loading="lazy">
+                        <div class="card-body">
+                            <h3 class="product-title card-title">"Call On Jesus" Tee</h3>
+                            <p class="product-price">BWP 200.00</p>
+                            <a href="inventory.html" class="btn btn-secondary">View Product</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <article class="product-card card h-100">
+                        <img src="Images/Trust God's Plan white Sweater.jpg" alt="Trust God's Plan T-Shirt" 
+                             class="product-image card-img-top"
+                             loading="lazy">
+                        <div class="card-body">
+                            <h3 class="product-title card-title">"Trust God's Plan" Sweater</h3>
+                            <p class="product-price">BWP 250.00</p>
+                            <a href="inventory.html" class="btn btn-secondary">View Product</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Faith in Fashion</h2>
+            <blockquote class="testimonial">
+                <p>"His Image Apparel lets me share my faith through clothing that's both stylish and meaningful!"</p>
+                <cite>- Precious M.</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Stay Inspired</h2>
+            <p>Join our newsletter for weekly devotionals and exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" class="form-control" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> His Image Apparel. All rights reserved.</p>
+            <p>"So whether you eat or drink or whatever you do, do it all for the glory of God." - 1 Corinthians 10:31</p>
+        </div>
+    </footer>
+
+    <!-- Floating Cross -->
+    <div class="floating-cross" title="Click for encouragement">✝</div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Floating cross functionality
+        document.querySelector('.floating-cross').addEventListener('click', function() {
+            const verses = [
+                "I can do all things through Christ who strengthens me. - Philippians 4:13",
+                "For God so loved the world that he gave his one and only Son. - John 3:16",
+                "Trust in the LORD with all your heart. - Proverbs 3:5",
+                "The LORD is my shepherd, I lack nothing. - Psalm 23:1",
+                "Be strong and courageous. Do not be afraid. - Joshua 1:9"
+            ];
+            
+            const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+            alert(randomVerse);
+        });
+        
+        // Form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            alert(`Thank you for subscribing with ${email}! You'll receive our next devotional soon.`);
+            this.querySelector('input').value = '';
+        });
+    </script>
+</body>
+</html>

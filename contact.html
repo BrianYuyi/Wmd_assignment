@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact His Image Apparel - Christian clothing to express your faith with style">
+    <title>Contact Us | His Image Apparel</title>
+    <link rel="icon" type="image/jpg" href="images/BackGround.jpg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/jpg" href="images/BackGround.jpg">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 56px;
+            color: var(--dark-color);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin: 0;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            color: var(--dark-color);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--secondary-color);
+        }
+        
+        .contact-hero {
+            background-color: var(--light-color);
+            padding: 80px 0;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        
+        .contact-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .form-control, .form-select {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+        }
+        
+        textarea.form-control {
+            height: 180px;
+        }
+        
+        .btn-contact {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 30px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .btn-contact:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+        
+        .contact-info-card {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 30px;
+            height: 100%;
+        }
+        
+        .contact-method {
+            margin-bottom: 25px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .thank-you {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            background-color: var(--light-color);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo">His Image <span style="color: var(--secondary-color);">Apparel</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventory.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="mb-4">Get In Touch</h1>
+            <p class="lead">We'd love to hear from you! Reach out with questions, prayer requests, or just to say hello.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                <div class="contact-card">
+                    <h2 class="mb-4">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-contact">Send Message</button>
+                    </form>
+                    
+                    <div class="thank-you" id="thankYou">
+                        <h2 class="mb-3">Thank You for Reaching Out!</h2>
+                        <p>We've received your message and will get back to you as soon as possible. God bless you!</p>
+                        <p><i class="fas fa-heart" style="color: var(--secondary-color);"></i> The His Image Apparel Team</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-5">
+                <div class="contact-info-card">
+                    <div class="contact-method text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>Phuzephuze Straight, Block 5<br>Gaborone, Botswana</p>
+                        
+                        <div class="map-container mt-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.210321477934!2d25.91841531546856!3d-24.6283975836353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM3JzQyLjIiUyAyNcKwNTUnMTMuNiJF!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>(+267) 3215-4037</p>
+                        <p>Mon-Fri: 9am - 5pm</p>
+                    </div>
+                    
+                    <div class="contact-method text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>support@hisimageapparel.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 His Image Apparel. All Rights Reserved.</p>
+            <div class="social-links mt-3">
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your server
+            // For demonstration, we'll just show the thank you message
+            
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('thankYou').style.display = 'block';
+            
+            // Scroll to thank you message
+            document.getElementById('thankYou').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+     <!-- Floating Cross -->
+     <div class="floating-cross" title="Click for encouragement">✝</div>
+
+     <!-- Dark Mode Toggle -->
+     <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+         <i class="fas fa-moon"></i>
+     </button>
+ 
+     <!-- Shopping Cart -->
+     <div class="cart-btn">
+         <i class="fas fa-shopping-cart"></i>
+         <span class="cart-items-count">0</span>
+     </div>
+ 
+     <!-- Cart Sidebar -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+         <div class="offcanvas-header">
+             <h5 class="offcanvas-title" id="cartSidebarLabel">Your Faith Cart</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body">
+             <div class="cart-items">
+                 <div class="empty-cart-message text-center py-5">
+                     <i class="fas fa-shopping-cart fa-3x mb-3 text-muted"></i>
+                     <h5>Your cart is empty</h5>
+                     <p class="text-muted">Start adding some faith-inspired items!</p>
+                 </div>
+             </div>
+             <div class="cart-footer mt-auto">
+                 <div class="d-flex justify-content-between align-items-center mb-3">
+                     <strong>Total:</strong>
+                     <span class="cart-total-price">BWP 0.00</span>
+                 </div>
+                 <button class="btn btn-primary w-100 btn-checkout">Proceed to Checkout</button>
+             </div>
+         </div>
+     </div>
+ 
+     <!-- Bootstrap JS Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+         // Update current year
+         document.getElementById('current-year').textContent = new Date().getFullYear();
+         
+         // Initialize cart functionality
+         document.addEventListener('DOMContentLoaded', function() {
+             const cartBtn = document.querySelector('.cart-btn');
+             const cartSidebar = new bootstrap.Offcanvas(document.getElementById('cartSidebar'));
+             
+             // Toggle cart sidebar
+             cartBtn.addEventListener('click', function() {
+                 cartSidebar.toggle();
+             });
+             
+             // Filter functionality
+             const filterBtns = document.querySelectorAll('.filter-btn');
+             const clothingItems = document.querySelectorAll('.clothing-item');
+             
+             filterBtns.forEach(btn => {
+                 btn.addEventListener('click', function() {
+                     // Remove active class from all buttons
+                     filterBtns.forEach(b => b.classList.remove('active'));
+                     // Add active class to clicked button
+                     this.classList.add('active');
+                     
+                     const category = this.dataset.category;
+                     
+                     clothingItems.forEach(item => {
+                         if (category === 'all' || item.dataset.category === category) {
+                             item.style.display = 'block';
+                         } else {
+                             item.style.display = 'none';
+                         }
+                     });
+                 });
+             });
+             
+             // Add to cart functionality
+             const addToCartBtns = document.querySelectorAll('.add-to-cart');
+             const cartItemsCount = document.querySelector('.cart-items-count');
+             const cartTotalPrice = document.querySelector('.cart-total-price');
+             const cartItemsContainer = document.querySelector('.cart-items');
+             const emptyCartMessage = document.querySelector('.empty-cart-message');
+             
+             let cart = [];
+             
+             addToCartBtns.forEach(btn => {
+                 btn.addEventListener('click', function() {
+                     const id = this.dataset.id;
+                     const name = this.dataset.name;
+                     const price = parseFloat(this.dataset.price);
+                     const image = this.dataset.image;
+                     
+                     // Check if item already exists in cart
+                     const existingItem = cart.find(item => item.id === id);
+                     
+                     if (existingItem) {
+                         existingItem.quantity += 1;
+                     } else {
+                         cart.push({
+                             id,
+                             name,
+                             price,
+                             image,
+                             quantity: 1
+                         });
+                     }
+                     
+                     updateCart();
+                     cartSidebar.show();
+                 });
+             });
+             
+             function updateCart() {
+                 // Update cart count
+                 const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                 cartItemsCount.textContent = totalItems;
+                 
+                 // Update cart total
+                 const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                 cartTotalPrice.textContent = `BWP ${totalPrice.toFixed(2)}`;
+                 
+                 // Update cart items display
+                 if (cart.length === 0) {
+                     emptyCartMessage.style.display = 'block';
+                     cartItemsContainer.innerHTML = '';
+                     cartItemsContainer.appendChild(emptyCartMessage);
+                 } else {
+                     emptyCartMessage.style.display = 'none';
+                     
+                     let cartHTML = '';
+                     cart.forEach(item => {
+                         cartHTML += `
+                             <div class="card mb-3">
+                                 <div class="row g-0">
+                                     <div class="col-md-4">
+                                         <img src="${item.image}" class="img-fluid rounded-start" alt="${item.name}">
+                                     </div>
+                                     <div class="col-md-8">
+                                         <div class="card-body">
+                                             <h6 class="card-title">${item.name}</h6>
+                                             <p class="card-text">BWP ${item.price.toFixed(2)} x ${item.quantity}</p>
+                                             <p class="card-text"><strong>BWP ${(item.price * item.quantity).toFixed(2)}</strong></p>
+                                             <button class="btn btn-sm btn-outline-danger remove-item" data-id="${item.id}">Remove</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         `;
+                     });
+                     
+                     cartItemsContainer.innerHTML = cartHTML;
+                     
+                     // Add event listeners to remove buttons
+                     document.querySelectorAll('.remove-item').forEach(btn => {
+                         btn.addEventListener('click', function() {
+                             const id = this.dataset.id;
+                             cart = cart.filter(item => item.id !== id);
+                             updateCart();
+                         });
+                     });
+                 }
+             }
+             
+             // Checkout button
+             document.querySelector('.btn-checkout').addEventListener('click', function() {
+                 if (cart.length === 0) {
+                     alert('Your cart is empty. Please add some items before checking out.');
+                 } else {
+                     alert('Proceeding to checkout! In a real implementation, this would redirect to a checkout page.');
+                     // In a real implementation: window.location.href = 'checkout.html';
+                 }
+             });
+             
+             // Floating cross functionality
+             document.querySelector('.floating-cross').addEventListener('click', function() {
+                 const verses = [
+                     "I can do all things through Christ who strengthens me. - Philippians 4:13",
+                     "For God so loved the world that he gave his one and only Son. - John 3:16",
+                     "Trust in the LORD with all your heart. - Proverbs 3:5",
+                     "The LORD is my shepherd, I lack nothing. - Psalm 23:1",
+                     "Be strong and courageous. Do not be afraid. - Joshua 1:9"
+                 ];
+                 
+                 const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+                 alert(randomVerse);
+             });
+             
+             // Dark mode toggle
+             document.querySelector('.dark-mode-toggle').addEventListener('click', function() {
+                 document.body.classList.toggle('dark-mode');
+                 this.innerHTML = document.body.classList.contains('dark-mode') 
+                     ? '<i class="fas fa-sun"></i>' 
+                     : '<i class="fas fa-moon"></i>';
+             });
+             
+             // Add dark mode styles
+             const style = document.createElement('style');
+             style.textContent = `
+                 body.dark-mode {
+                     background-color: #121212;
+                     color: #f8f9fa;
+                 }
+                 
+                 body.dark-mode .navbar {
+                     background-color: #1e1e1e !important;
+                 }
+                 
+                 body.dark-mode .card {
+                     background-color: #1e1e1e;
+                     color: #f8f9fa;
+                 }
+                 
+                 body.dark-mode .card-title {
+                     color: #f8f9fa;
+                 }
+                 
+                 body.dark-mode .card-text {
+                     color: #adb5bd;
+                 }
+                 
+                 body.dark-mode .btn-outline-secondary {
+                     color: #f8f9fa;
+                     border-color: #6c757d;
+                 }
+                 
+                 body.dark-mode .btn-outline-secondary:hover {
+                     background-color: #6c757d;
+                 }
+             `;
+             document.head.appendChild(style);
+         });
+     </script>
+</body>
+</html>

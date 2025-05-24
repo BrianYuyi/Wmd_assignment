@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About His Image Apparel - Christian clothing to express your faith with style">
+    <title>About Us | His Image Apparel</title>
+    <link rel="icon" type="image/jpg" href="images/BackGround.jpg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/jpg" href="images/BackGround.jpg">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 56px;
+            color: var(--dark-color);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin: 0;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            color: var(--dark-color);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--secondary-color);
+        }
+        
+        .about-hero {
+            background-color: var(--light-color);
+            padding: 100px 0;
+            text-align: center;
+            margin-bottom: 60px;
+            background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('images/about-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .mission-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+            transition: transform 0.3s;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .bible-verse {
+            background-color: var(--light-color);
+            border-left: 5px solid var(--secondary-color);
+            padding: 30px;
+            margin: 40px 0;
+            font-style: italic;
+        }
+        
+        .team-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .team-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--secondary-color);
+            margin: 0 auto 20px;
+        }
+        
+        .social-icon {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--secondary-color);
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+            margin: 40px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+            border: 3px solid white;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .footer-logo span {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo">His Image <span style="color: var(--secondary-color);">Apparel</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventory.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="display-4 mb-4">Our Story</h1>
+            <p class="lead">Faith-inspired apparel that reflects God's image in us</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <div class="container">
+        <!-- Mission Section -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="mission-card">
+                        <h2><i class="fas fa-cross text-primary me-2"></i> Our Mission</h2>
+                        <p>To create high-quality, faith-inspired clothing that helps believers express their faith boldly and encourages others to seek Christ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="mission-card">
+                        <h2><i class="fas fa-eye text-primary me-2"></i> Our Vision</h2>
+                        <p>To see a generation clothed in garments that reflect God's image, sparking conversations about faith wherever they go.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="mb-5">
+            <h2 class="mb-4">From Humble Beginnings</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Founded in 2020, His Image Apparel began as a small ministry founded by Mr Caleb Moe and named it "Kids Living In Christ Are Cool Clothing". Merchandise was distributed door-to-door and meet-ups at designated delivery points.</p>
+                    <p>As he continued to embark on his mission to spread the gospel efficiently amongst the Youth, He met and collaborated with Brian Yuyi, establishing a partnership and renaming the ministry into the contemporary "His Image Apparel".</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>Today the ministry is one of the top-3 BESTSELLERS in the clothing market and works hand-in-hand with companies such as The BIG MONGOLIE. This success comes from the positive influence it brought amongst the "Now Generation".</p>
+                    <div class="bible-verse">
+                        <p>"Just as each of us has one body with many members, and these members do not all have the same function, so in Christ we, though many, form one body."</p>
+                        <p class="text-end fw-bold">Romans 12:4-5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-5">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2020</h4>
+                    <p>Founded as "Kids Living In Christ Are Cool Clothing" by Caleb Moe, distributing merchandise door-to-door.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2021</h4>
+                    <p>Partnership formed with Brian Yuyi, rebranded as "His Image Apparel". First official collection launched.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2022</h4>
+                    <p>Collaboration with The BIG MONGOLIE began. Expanded product line and customer base.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2023</h4>
+                    <p>Recognized as one of the top-3 bestsellers in the Christian apparel market.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2024</h4>
+                    <p>Expanded operations team with Jason Matlhare and Marie Kenanao joining the ministry.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="my-5">
+            <h2 class="text-center mb-5">Meet Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card">
+                        <img src="images/caleb.jpg" alt="Caleb Moe" class="team-img">
+                        <h3>Caleb Moe</h3>
+                        <p class="text-muted">Founder & Spiritual Leader</p>
+                        <p>With 6 years of ministry experience, Caleb ensures our designs align with biblical truth.</p>
+                        <div class="mt-3">
+                            <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card">
+                        <img src="images/breezy.jpg" alt="Brian Yuyi" class="team-img">
+                        <h3>Brian Yuyi</h3>
+                        <p class="text-muted">Lead Designer</p>
+                        <p>Combining faith and fashion to create wearable testimonies.</p>
+                        <div class="mt-3">
+                            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card">
+                        <img src="images/jason.jpg" alt="Jason Matlhare" class="team-img">
+                        <h3>Jason Matlhare</h3>
+                        <p class="text-muted">Operations Manager</p>
+                        <p>Ensures our products meet the highest quality standards.</p>
+                        <div class="mt-3">
+                            <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:matlhahrej@hotmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card">
+                        <img src="images/wendy.jpg" alt="Marie Kenanao" class="team-img">
+                        <h3>Marie Kenanao</h3>
+                        <p class="text-muted">Apparel Agent</p>
+                        <p>Ensures high quality packaging and delivery of merchandise.</p>
+                        <div class="mt-3">
+                            <a href="https//www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:kenanaomarie@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+                <p>&copy; 2025 His Image Apparel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Floating Cross -->
+     <div class="floating-cross" title="Click for encouragement">✝</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h2 class="footer-logo">His Image <span>Apparel</span></h2>
+                    <p class="mt-3">Faith-inspired clothing that reflects God's image in us.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="inventory.html" class="text-white text-decoration-none">Shop</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p class="mt-3">support@hisimageapparel.com</p>
+                </div>
+            </div>
+ 
+     <!-- Bootstrap JS Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+         // Update current year
+         document.getElementById('current-year').textContent = new Date().getFullYear();
+         
+         // Initialize cart functionality
+         document.addEventListener('DOMContentLoaded', function() {
+             const cartBtn = document.querySelector('.cart-btn');
+             const cartSidebar = new bootstrap.Offcanvas(document.getElementById('cartSidebar'));
+             
+             // Toggle cart sidebar
+             cartBtn.addEventListener('click', function() {
+                 cartSidebar.toggle();
+             });
+             
+             // Filter functionality
+             const filterBtns = document.querySelectorAll('.filter-btn');
+             const clothingItems = document.querySelectorAll('.clothing-item');
+             
+             filterBtns.forEach(btn => {
+                 btn.addEventListener('click', function() {
+                     // Remove active class from all buttons
+                     filterBtns.forEach(b => b.classList.remove('active'));
+                     // Add active class to clicked button
+                     this.classList.add('active');
+                     
+                     const category = this.dataset.category;
+                     
+                     clothingItems.forEach(item => {
+                         if (category === 'all' || item.dataset.category === category) {
+                             item.style.display = 'block';
+                         } else {
+                             item.style.display = 'none';
+                         }
+                     });
+                 });
+             });
+             
+             // Add to cart functionality
+             const addToCartBtns = document.querySelectorAll('.add-to-cart');
+             const cartItemsCount = document.querySelector('.cart-items-count');
+             const cartTotalPrice = document.querySelector('.cart-total-price');
+             const cartItemsContainer = document.querySelector('.cart-items');
+             const emptyCartMessage = document.querySelector('.empty-cart-message');
+             
+             let cart = [];
+             
+             addToCartBtns.forEach(btn => {
+                 btn.addEventListener('click', function() {
+                     const id = this.dataset.id;
+                     const name = this.dataset.name;
+                     const price = parseFloat(this.dataset.price);
+                     const image = this.dataset.image;
+                     
+                     // Check if item already exists in cart
+                     const existingItem = cart.find(item => item.id === id);
+                     
+                     if (existingItem) {
+                         existingItem.quantity += 1;
+                     } else {
+                         cart.push({
+                             id,
+                             name,
+                             price,
+                             image,
+                             quantity: 1
+                         });
+                     }
+                     
+                     updateCart();
+                     cartSidebar.show();
+                 });
+             });
+             
+             function updateCart() {
+                 // Update cart count
+                 const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                 cartItemsCount.textContent = totalItems;
+                 
+                 // Update cart total
+                 const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                 cartTotalPrice.textContent = `BWP ${totalPrice.toFixed(2)}`;
+                 
+                 // Update cart items display
+                 if (cart.length === 0) {
+                     emptyCartMessage.style.display = 'block';
+                     cartItemsContainer.innerHTML = '';
+                     cartItemsContainer.appendChild(emptyCartMessage);
+                 } else {
+                     emptyCartMessage.style.display = 'none';
+                     
+                     let cartHTML = '';
+                     cart.forEach(item => {
+                         cartHTML += `
+                             <div class="card mb-3">
+                                 <div class="row g-0">
+                                     <div class="col-md-4">
+                                         <img src="${item.image}" class="img-fluid rounded-start" alt="${item.name}">
+                                     </div>
+                                     <div class="col-md-8">
+                                         <div class="card-body">
+                                             <h6 class="card-title">${item.name}</h6>
+                                             <p class="card-text">BWP ${item.price.toFixed(2)} x ${item.quantity}</p>
+                                             <p class="card-text"><strong>BWP ${(item.price * item.quantity).toFixed(2)}</strong></p>
+                                             <button class="btn btn-sm btn-outline-danger remove-item" data-id="${item.id}">Remove</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         `;
+                     });
+                     
+                     cartItemsContainer.innerHTML = cartHTML;
+                     
+                     // Add event listeners to remove buttons
+                     document.querySelectorAll('.remove-item').forEach(btn => {
+                         btn.addEventListener('click', function() {
+                             const id = this.dataset.id;
+                             cart = cart.filter(item => item.id !== id);
+                             updateCart();
+                         });
+                     });
+                 }
+             }
+             
+             // Checkout button
+             document.querySelector('.btn-checkout').addEventListener('click', function() {
+                 if (cart.length === 0) {
+                     alert('Your cart is empty. Please add some items before checking out.');
+                 } else {
+                     alert('Proceeding to checkout! In a real implementation, this would redirect to a checkout page.');
+                     // In a real implementation: window.location.href = 'checkout.html';
+                 }
+             });
+             
+             // Floating cross functionality
+             document.querySelector('.floating-cross').addEventListener('click', function() {
+                 const verses = [
+                     "I can do all things through Christ who strengthens me. - Philippians 4:13",
+                     "For God so loved the world that he gave his one and only Son. - John 3:16",
+                     "Trust in the LORD with all your heart. - Proverbs 3:5",
+                     "The LORD is my shepherd, I lack nothing. - Psalm 23:1",
+                     "Be strong and courageous. Do not be afraid. - Joshua 1:9"
+                 ];
+                 
+                 const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+                 alert(randomVerse);
+             });
+             
+             // Dark mode toggle
+             document.querySelector('.dark-mode-toggle').addEventListener('click', function() {
+                 document.body.classList.toggle('dark-mode');
+                 this.innerHTML = document.body.classList.contains('dark-mode') 
+                     ? '<i class="fas fa-sun"></i>' 
+                     : '<i class="fas fa-moon"></i>';
+             });
+             
+             // Add dark mode styles
+             const style = document.createElement('style');
+             style.textContent = `
+                 body.dark-mode {
+                     background-color: #121212;
+                     color: #f8f9fa;
+                 }
+                 
+                 body.dark-mode .navbar {
+                     background-color: #1e1e1e !important;
+                 }
+                 
+                 body.dark-mode .card {
+                     background-color: #1e1e1e;
+                     color: #f8f9fa;
+                 }
+                 
+                 body.dark-mode .card-title {
+                     color: #f8f9fa;
+                 }
+                 
+                 body.dark-mode .card-text {
+                     color: #adb5bd;
+                 }
+                 
+                 body.dark-mode .btn-outline-secondary {
+                     color: #f8f9fa;
+                     border-color: #6c757d;
+                 }
+                 
+                 body.dark-mode .btn-outline-secondary:hover {
+                     background-color: #6c757d;
+                 }
+             `;
+             document.head.appendChild(style);
+         });
+     </script>
+</body>
+</html>
